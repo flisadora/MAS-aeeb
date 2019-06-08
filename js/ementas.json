@@ -1,0 +1,80 @@
+{
+    "Ementas": [
+        {
+            "dia": "Segunda",
+            "lanche_manha": "Fruta da época",
+            "almoco": {
+                "sopa": "Couve branca",
+                "prato": "Hamburguer de aves grelhado/forno com arroz de cenoura",
+                "salada": "Alface, tomate, beterraba e cenoura",
+                "sobremesa": "Fruta assada",
+                "pao": "Pão de mistura",
+                "valor_energ": "393kcal",
+                "nutrientes": "Prot:33,6g/Lip:20,5g/HC:52,6g",
+                "alergias": "1, 12"
+            },
+            "lanche_tarde": "Broa e fruta da época"
+        },
+        {
+            "dia": "Terça",
+            "lanche_manha": "Fruta da época",
+            "almoco": {
+                "sopa": "Juliana",
+                "prato": "Salada russa (macedónia de legumes) com atum",
+                "salada": "Alface, tomate, beterraba e cenoura",
+                "sobremesa": "Fruta da época",
+                "pao": "Pão de mistura",
+                "valor_energ": "559kcal",
+                "nutrientes": "Prot:41g/Lip:22,1g/HC:49,4g",
+                "alergias": "3, 4"
+            },
+            "lanche_tarde": "Broa e fruta da época"
+        },
+        {
+            "dia": "Quarta",
+            "lanche_manha": "Fruta da época",
+            "almoco": {
+                "sopa": "Caldo verde",
+                "prato": "Arroz de pato",
+                "salada": "Alface, tomate, beterraba e cenoura",
+                "sobremesa": "Fruta da época",
+                "pao": "Pão de mistura",
+                "valor_energ": "300kcal",
+                "nutrientes": "Prot:17,9g/Lip:10,2g/HC:60,9g",
+                "alergias": "1, 12"
+            },
+            "lanche_tarde": "Broa e fruta da época"
+        },
+        {
+            "dia": "Quinta",
+            "lanche_manha": "Fruta da época",
+            "almoco": {
+                "sopa": "Creme de cenoura e feijão",
+                "prato": "Bacalhau à Brás",
+                "salada": "Alface, tomate, beterraba e cenoura",
+                "sobremesa": "Fruta da época / Gelatina",
+                "pao": "Pão de mistura",
+                "valor_energ": "390kcal",
+                "nutrientes": "Prot:18g/Lip:17,5g/HC:39,6g",
+                "alergias": "1, 3, 4, 12"
+            },
+            "lanche_tarde": "Broa e fruta da época"
+        },
+        {
+            "dia": "Sexta",
+            "lanche_manha": "Fruta da época",
+            "almoco": {
+                "sopa": "Couve branca",
+                "prato": "Massa de carne(carne de porco e frango)",
+                "salada": "Alface, tomate, beterraba e cenoura",
+                "sobremesa": "Fruta da época",
+                "pao": "Pão de mistura",
+                "valor_energ": "410kcal",
+                "nutrientes": "Prot:35,2g/Lip:12,6g/HC:40,2g",
+                "alergias": "1, 12"
+            },
+            "lanche_tarde": "Broa e fruta da época"
+        }
+    ],
+    "Alergias": "A sua refeição contém ou pode conter as seguintes substâncias ou produtos e seus derivados: 1-Cereais que contêm glúten; 2-Crustáceos; 3-Ovos; 4-Peixes; 5-Amendoins; 6-Soja; 7-Leite; 8-Frutos de casca rija; 9-Aipo; 10-Mostarda; 11-Sementes de Sésamo; 12-Dióxido de enxofre e sulfitos; 13-Tremoço; 14-Moluscos. Para quem não é alérgico ou intolerante, estas substâncias ou produtos são completamente inofensivas."
+}

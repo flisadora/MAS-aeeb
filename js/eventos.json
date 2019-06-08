@@ -1,0 +1,45 @@
+{
+    "Atual":{
+        "eventos":[
+            {
+                "data": "13/03/2019",
+                "hora_inicio": "10:00",
+                "hora_fim": "17:00",
+                "titulo": "Visita ao Museu",
+                "descricao": "A escola vai promover uma visita ao Museu World of Discoveries, no Porto, com transporte de autocarro disponibilizado pela escola, com direito a almoço e lanche da tarde. Valor de 3€ deve ser pago até o dia 11/03."
+            },
+            {
+                "data": "05/06/2019",
+                "hora_inicio": "13:00",
+                "hora_fim": "17:00",
+                "titulo": "Comemoração dia da Criança",
+                "descricao": "Em função do dia da Criança, celebrado no dia 01 de junho, vamos realizar atividades de recreação com uma visita do Circo à escola."
+            },
+            {
+                "data": "07/06/2019",
+                "hora_inicio": "10:00",
+                "Hora_fim": "17:00",
+                "titulo": "Feira de Ciências",
+                "descricao": "Para finalizar o ano vamos promover a Feira de Ciências, com a apresentação e exposição dos projetos desenvolvidos com os alunos durante o ano que termina."
+            },
+            {
+                "data": "15/06/2019",
+                "hora_inicio": "9:00",
+                "Hora_fim": "17:00",
+                "titulo": "Visita ao Parque Aquático",
+                "descricao": "Visita ao Parque Aquático, com transporte de autocarro disponibilizado pela escola, com direito a almoço e lanche da tarde. Valor de 3€ deve ser pago até o último dia de aula."
+            }
+        ]
+    },
+    "Passado":{
+        "eventos":[
+            {
+                "data": "03/05/2019",
+                "hora_inicio": "13:00",
+                "hora_fim": "17:00",
+                "titulo": "Comemoração dia da Mãe",
+                "descricao": "Em função do dia da Mãe, no domingo 05 de maio, vamos realizar apresentações dos alunos em homenagem às Mães e todos Encarregados de Educação. Contamos a vossa presença!"
+            }
+        ]
+    }
+}

@@ -1,0 +1,57 @@
+{
+    "Segunda":[
+        {"disciplina":"Português"},
+        {"disciplina":"Estudo do Meio"},
+        {"disciplina":"INTERVALO"},
+        {"disciplina":"Educação Artística"},
+        {"disciplina":"ALMOÇO"},
+        {"disciplina":"Matemática"},
+        {"disciplina":"Matemática"},
+        {"disciplina":"INTERVALO"},
+        {"disciplina":"Desporto"}
+    ],
+    "Terça":[
+        {"disciplina":"Matemática"},
+        {"disciplina":"História e Contos Tradicionais"},
+        {"disciplina":"INTERVALO"},
+        {"disciplina":"Educação Física"},
+        {"disciplina":"ALMOÇO"},
+        {"disciplina":"Português"},
+        {"disciplina":"Português"},
+        {"disciplina":"INTERVALO"},
+        {"disciplina":"Xadrez"}
+    ],
+    "Quarta":[
+        {"disciplina":"Educação Artística"},
+        {"disciplina":"Estudo do Meio"},
+        {"disciplina":"INTERVALO"},
+        {"disciplina":"Português"},
+        {"disciplina":"ALMOÇO"},
+        {"disciplina":"Música"},
+        {"disciplina":"Matemática"},
+        {"disciplina":"INTERVALO"},
+        {"disciplina":"Cidadania e Desenvolvimento"}
+    ],
+    "Quinta":[
+        {"disciplina":"História e Contos Tradicionais"},
+        {"disciplina":"Português"},
+        {"disciplina":"INTERVALO"},
+        {"disciplina":"Matemática"},
+        {"disciplina":"ALMOÇO"},
+        {"disciplina":"Brincar com a Ciência"},
+        {"disciplina":"Estudo do Meio"},
+        {"disciplina":"INTERVALO"},
+        {"disciplina":"Desporto"}
+    ],
+    "Sexta":[
+        {"disciplina":"Português"},
+        {"disciplina":"Português"},
+        {"disciplina":"INTERVALO"},
+        {"disciplina":"Educação Física"},
+        {"disciplina":"ALMOÇO"},
+        {"disciplina":"Matemática"},
+        {"disciplina":"Matemática"},
+        {"disciplina":"INTERVALO"},
+        {"disciplina":"Educação Artística"}
+    ]
+}

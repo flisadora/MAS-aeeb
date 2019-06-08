@@ -1,0 +1,35 @@
+.cl-white{
+    background-color: white;
+}
+
+.cl-yellow{
+    background-color: #fcfbd0;
+}
+
+.cl-blue{
+    background-color: #d0e8fc;
+}
+
+.cl-pink{
+    background-color: #f7c5e2;
+}
+
+.cl-orange{
+    background-color: #ffe4bf;
+}
+
+.cl-green{
+    background-color: #e0fcd0;
+}
+
+.cl-purple{
+    background-color: #ecd1fc;
+}
+
+.cl-grey{
+    background-color: #e8e8e8;
+}
+
+#table-horario tr{
+    height: 62px;
+}

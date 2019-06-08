@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>AEEB - Turma</title>
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link
+    href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+    rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/sb-admin-2.css" rel="stylesheet">
+
+  <!-- Custom styles for this page -->
+  <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Page Wrapper -->
+  <div id="wrapper">
+
+    <!-- Sidebar -->
+    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+      <!-- Sidebar - Brand -->
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+        <a class="navbar-brand" href="#">
+          <img src="img/logo.png" width="100%" height="auto" alt="AEEB">
+        </a>
+      </a>
+
+      <!-- ko foreach:menu -->
+      <!-- ko if:tipo=='divider' -->
+      <hr class="sidebar-divider">
+      <!-- /ko -->
+      <!-- ko if:tipo=='normal' -->
+      <!-- ko if:nome=='Turma' -->
+      <li class="nav-item active">
+        <a class="nav-link" href="#">
+          <i data-bind="attr:{class:icone}"></i>
+          <span data-bind="text:nome"></span></a>
+      </li>
+      <!--/ko-->
+      <!-- ko ifnot:nome=='Turma' -->
+      <li class="nav-item">
+        <a class="nav-link" data-bind="attr:{href:url}">
+          <i data-bind="attr:{class:icone}"></i>
+          <span data-bind="text:nome"></span></a>
+      </li>
+      <!--/ko-->
+      <!-- /ko -->
+      <!-- ko if:tipo=='dropdown' -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" aria-expanded="true"
+          data-bind="attr:{'data-target':'#'+id,'aria-controls':id}">
+          <i data-bind="attr:{class:icone}"></i>
+          <span data-bind="text:nome"></span>
+        </a>
+        <div data-bind="attr:{id:id}" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header" data-bind="text:dropdownTitle"></h6>
+            <!-- ko foreach:subs -->
+            <a class="collapse-item" data-bind="text:nome, attr:{href:url}"></a>
+            <!-- /ko -->
+          </div>
+        </div>
+      </li>
+      <!-- /ko -->
+      <!-- ko if:tipo=='heading' -->
+      <div class="sidebar-heading" data-bind="text:nome"></div>
+      <!-- /ko -->
+      <!-- /ko -->
+
+      <!-- Sidebar Toggler (Sidebar) -->
+      <div class="text-center d-none d-md-inline">
+        <button class="rounded-circle border-0" id="sidebarToggle"></button>
+      </div>
+
+    </ul>
+    <!-- End of Sidebar -->
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+
+      <!-- Main Content -->
+      <div id="content">
+
+        <!-- Topbar -->
+        <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+          <!-- Sidebar Toggle (Topbar) -->
+          <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+            <i class="fa fa-bars"></i>
+          </button>
+
+          <!-- Topbar Search -->
+          <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+            <div class="input-group">
+              <h1 class="h3 mb-2 text-gray-800">Gerir - Turma 1B</h1>
+            </div>
+          </form>
+
+          <!-- Topbar Navbar -->
+          <ul class="navbar-nav ml-auto">
+
+            <!-- Dropdown - Messages -->
+            <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
+              aria-labelledby="searchDropdown">
+              <form class="form-inline mr-auto w-100 navbar-search">
+                <div class="input-group">
+                  <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
+                    aria-label="Search" aria-describedby="basic-addon2">
+                  <div class="input-group-append">
+                    <button class="btn btn-primary" type="button">
+                      <i class="fas fa-search fa-sm"></i>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            </li>
+
+            <!-- Nav Item - Alerts -->
+            <li class="nav-item dropdown no-arrow mx-1">
+              <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-bell fa-fw"></i>
+                <!-- Counter - Alerts -->
+                <span class="badge badge-danger badge-counter">1+</span>
+              </a>
+              <!-- Dropdown - Alerts -->
+              <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                aria-labelledby="alertsDropdown">
+                <h6 class="dropdown-header">
+                  Central de Anúncios
+                </h6>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="mr-3">
+                    <div class="icon-circle bg-primary">
+                      <i class="fas fa-file-alt text-white"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="small text-gray-500">Junho 8, 2019</div>
+                    <span class="font-weight-bold">Já está dsiponível a ementa da próxima semana.</span>
+                  </div>
+                </a>
+                <a class="dropdown-item text-center small text-gray-500" href="#">Mostrar todos os Anúncios</a>
+              </div>
+            </li>
+
+            <!-- Nav Item - Messages -->
+            <li class="nav-item dropdown no-arrow mx-1">
+              <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-envelope fa-fw"></i>
+                <!-- Counter - Messages -->
+                <span class="badge badge-danger badge-counter">2</span>
+              </a>
+              <!-- Dropdown - Messages -->
+              <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                aria-labelledby="messagesDropdown">
+                <h6 class="dropdown-header">
+                  Central de Mensagens
+                </h6>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="dropdown-list-image mr-3">
+                    <img class="rounded-circle" src="https://source.unsplash.com/PUF9b2AFWCo/60x60" alt="">
+                    <div class="status-indicator bg-success"></div>
+                  </div>
+                  <div class="font-weight-bold">
+                    <div class="text-truncate">Obrigada professor Carlos ...</div>
+                    <div class="small text-gray-500">João Miguel Fonseca · 3h</div>
+                  </div>
+                </a>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="dropdown-list-image mr-3">
+                    <img class="rounded-circle" src="https://source.unsplash.com/7fzINre0NQE/60x60" alt="">
+                    <div class="status-indicator"></div>
+                  </div>
+                  <div>
+                    <div class="text-truncate">Enviamos hoje a autorização ...</div>
+                    <div class="small text-gray-500">Ana Rita Carvalho · 1d</div>
+                  </div>
+                </a>
+                <a class="dropdown-item text-center small text-gray-500" href="#">Ler Mais Mensagens</a>
+              </div>
+            </li>
+
+            <div class="topbar-divider d-none d-sm-block"></div>
+
+            <!-- Nav Item - User Information -->
+            <li class="nav-item dropdown no-arrow">
+              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Isadora Loredo</span>
+                <img class="img-profile rounded-circle" src="https://source.unsplash.com/_H6wpor9mjs/60x60">
+              </a>
+              <!-- Dropdown - User Information -->
+              <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                <a class="dropdown-item" href="#">
+                  <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Meus Dados
+                </a>
+                <a class="dropdown-item" href="#">
+                  <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Configurações
+                </a>
+                <a class="dropdown-item" href="#">
+                  <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Log de Atividades
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                  <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Sair
+                </a>
+              </div>
+            </li>
+
+          </ul>
+
+        </nav>
+      </div>
+      <!-- End of Topbar -->
+
+      <!-- Begin Page Content -->
+      <div class="container-fluid pb-5" id="pageContent">
+
+        <!-- Page Heading -->
+        <p class="mb-4 mt-4">Nesta área poderá gerir a sua turma, nomeadamente consultar e atribuir notas, faltas e
+          atitudes.</p>
+
+        <!-- DataTales Example -->
+        <div class="card shadow mb-4">
+          <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary" data-bind="text:turma"></h6>
+          </div>
+          <div class="card-body">
+            <div class="table-responsive">
+              <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <thead>
+                  <tr>
+                    <th>Nome</th>
+                    <th title="Português">Port</th>
+                    <th title="Matemática">Mat</th>
+                    <th title="Estudo do Meio">EME</th>
+                    <th>Faltas</th>
+                    <th>Atitude</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tfoot>
+                  <tr>
+                    <th>Nome</th>
+                    <th title="Português">Port</th>
+                    <th title="Matemática">Mat</th>
+                    <th title="Estudo do Meio">EME</th>
+                    <th>Faltas</th>
+                    <th>Atitude</th>
+                    <th></th>
+                  </tr>
+                </tfoot>
+                <tbody data-bind="foreach:alunos">
+                  <tr>
+                    <td data-bind="text:nome, attr:{title:'N.º processo '+nAluno}"></td>
+                    <!-- ko foreach:disciplinas-->
+                    <td data-bind="text:avaliacao, attr:{title:observacao}"></td>
+                    <!-- /ko -->
+                    <td data-bind="text:nFaltas"></td>
+                    <td data-bind="html:atitudeEmoji, attr:{title:'Nível '+atitude}"></td>
+                    <td data-bind="click:$root.editarAluno"><i class="fas fa-edit"></i></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!--Modal editar dados-->
+        <!-- Modal -->
+        <div class="modal fade" id="editarDadosAluno" tabindex="-1" role="dialog"
+          aria-labelledby="editarDadosAlunoLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content border-left-primary">
+              <div class="modal-header">
+                <h5 class="modal-title" id="editarDadosAlunoLabel" data-bind="html:modalNome"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p class="col-12">Aqui pode consultar e editar as informações do seu aluno.</p>
+                <!-- Cartão avaliações -->
+                <div class="card shadow m2-4">
+                  <a href="#cardAvaliacoes" class="d-block card-header py-3" data-toggle="collapse" role="button"
+                    aria-expanded="true" aria-controls="cardAvaliacoes">
+                    <h6 class="m-0 font-weight-bold text-primary">Avaliações às displinas</h6>
+                  </a>
+                  <div class="collapse" id="cardAvaliacoes">
+                    <div class="card-body">
+                      <div class="form-group row">
+                        <label for="notaPt" class="col-sm-2 col-form-label">Português</label>
+                        <div class="btn-group col-10" data-toggle="buttons">
+                          <label class="btn btn-success active">
+                            <input type="radio" name="notaPt" id="notaPt5" value="5" autocomplete="off" checked>
+                            <span>5</span>
+                            <i class="fas fa-check"></i>
+                          </label>
+
+                          <label class="btn btn-info">
+                            <input type="radio" name="notaPt" id="notaPt4" value="4" autocomplete="off">
+                            <span>4</span>
+                            <i class="fas fa-check"></i>
+                          </label>
+
+                          <label class="btn btn-warning">
+                            <input type="radio" name="notaPt" id="notaPt3" value="3" autocomplete="off">
+                            <span>3</span>
+                            <i class="fas fa-check"></i>
+                          </label>
+
+                          <label class="btn btn-primary">
+                            <input type="radio" name="notaPt" id="notaPt2" value="2" autocomplete="off">
+                            <span>2</span>
+                            <i class="fas fa-check"></i>
+                          </label>
+
+                          <label class="btn btn-danger">
+                            <input type="radio" name="notaPt" id="notaPt1" value="1" autocomplete="off">
+                            <span>1</span>
+                            <i class="fas fa-check"></i>
+                          </label>
+                        </div>
+                      </div>
+
+                      <div class="form-group row">
+                        <label for="notaMat" class="col-sm-2 col-form-label">Matemática</label>
+                        <div class="btn-group col-10" data-toggle="buttons">
+                          <label class="btn btn-success active">
+                            <input type="radio" name="notaMat" id="notaMat5" value="5" autocomplete="off" checked>
+                            <span>5</span>
+                            <i class="fas fa-check"></i>
+                          </label>
+
+                          <label class="btn btn-info">
+                            <input type="radio" name="notaMat" id="notaMat4" value="4" autocomplete="off">
+                            <span>4</span>
+                            <i class="fas fa-check"></i>
+                          </label>
+                          <label class="btn btn-warning">
+                            <input type="radio" name="notaMat" id="notaMat3" value="3" autocomplete="off">
+                            <span>3</span>
+                            <i class="fas fa-check"></i>
+                          </label>
+
+                          <label class="btn btn-primary">
+                            <input type="radio" name="notaMat" id="notaMat2" value="2" autocomplete="off">
+                            <span>2</span>
+                            <i class="fas fa-check"></i>
+                          </label>
+
+                          <label class="btn btn-danger">
+                            <input type="radio" name="notaMat" id="notaMat1" value="1" autocomplete="off">
+                            <span>1</span>
+                            <i class="fas fa-check"></i>
+                          </label>
+                        </div>
+                      </div>
+
+                      <div class="form-group row">
+                        <label for="notaEM" class="col-sm-2 col-form-label">Estudo Meio</label>
+                        <div class="btn-group col-10" data-toggle="buttons">
+                          <label class="btn btn-success active">
+                            <input type="radio" name="notaEM" id="notaEM5" value="5" autocomplete="off" checked>
+                            <span>5</span>
+                            <i class="fas fa-check"></i>
+                          </label>
+
+                          <label class="btn btn-info">
+                            <input type="radio" name="notaEM" id="notaEM4" value="4" autocomplete="off">
+                            <span>4</span>
+                            <i class="fas fa-check"></i>
+                          </label>
+
+                          <label class="btn btn-warning">
+                            <input type="radio" name="notaEM" id="notaEM3" value="3" autocomplete="off">
+                            <span>3</span>
+                            <i class="fas fa-check"></i>
+                          </label>
+
+                          <label class="btn btn-primary">
+                            <input type="radio" name="notaEM" id="notaEM2" value="2" autocomplete="off">
+                            <span>2</span>
+                            <i class="fas fa-check"></i>
+                          </label>
+
+                          <label class="btn btn-danger">
+                            <input type="radio" name="notaEM" id="notaEM1" value="1" autocomplete="off">
+                            <span>1</span>
+                            <i class="fas fa-check"></i>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Cartão avaliações -->
+                  <div class="card shadow m2-4">
+                    <a href="#cardAtitudes" class="d-block card-header py-3" data-toggle="collapse" role="button"
+                      aria-expanded="true" aria-controls="cardAtitudes">
+                      <h6 class="m-0 font-weight-bold text-primary">Avaliações das atitudes</h6>
+                    </a>
+                    <div class="collapse" id="cardAtitudes">
+                      <div class="card-body">
+                        <div class="form-group row">
+                          <label for="notaAtitudes" class="col-sm-2 col-form-label">Atitudes</label>
+                          <div class="btn-group col-10" data-toggle="buttons">
+                            <label class="btn btn-success active">
+                              <input type="radio" name="notaAtitudes" id="notaAtitudes5" value="5" autocomplete="off"
+                                checked>
+                              <span class="fas fa-grin-stars"></span>
+                              <i class="fas fa-check"></i>
+                            </label>
+
+                            <label class="btn btn-info">
+                              <input type="radio" name="notaAtitudes" id="notaAtitudes4" value="4" autocomplete="off">
+                              <span class="fas fa-laugh"></span>
+                              <i class="fas fa-check"></i>
+                            </label>
+
+                            <label class="btn btn-warning">
+                              <input type="radio" name="notaAtitudes" id="notaAtitudes3" value="3" autocomplete="off">
+                              <span class="fas fa-meh"></span>
+                              <i class="fas fa-check"></i>
+                            </label>
+
+                            <label class="btn btn-primary">
+                              <input type="radio" name="notaAtitudes" id="notaAtitudes2" value="2" autocomplete="off">
+                              <span class="fas fa-frown-open"></span>
+                              <i class="fas fa-check"></i>
+                            </label>
+
+                            <label class="btn btn-danger">
+                              <input type="radio" name="notaAtitudes" id="notaAtitudes1" value="1" autocomplete="off">
+                              <span class="fas fa-sad-tear"></span>
+                              <i class="fas fa-check"></i>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- ko with:modalAluno -->
+                  <!-- Cartão Faltas -->
+                  <div class="card shadow m2-4">
+                    <a href="#cardFaltas" class="d-block card-header py-3" data-toggle="collapse" role="button"
+                      aria-expanded="true" aria-controls="cardFaltas">
+                      <h6 class="m-0 font-weight-bold text-primary">Gestão das faltas</h6>
+                    </a>
+                    <div class="collapse" id="cardFaltas">
+                      <div class="card-body">
+                        <a class="btn btn-primary btn-icon-split mb-3" id="modalAdicionarFalta"
+                          href="#cardAdicionarFaltas" data-toggle="collapse" role="button" aria-expanded="true"
+                          aria-controls="cardAdicionarFaltas">
+                          <span class="icon text-white-50">
+                            <i class="fas fa-plus"></i>
+                          </span>
+                          <span class="text">Adicionar falta</span>
+                        </a>
+                        <div class="collapse" id="cardAdicionarFaltas">
+                          <div class="form-group row">
+                            <label for="faltaDisciplina" class="col-sm-2 col-form-label">Disciplina</label>
+                            <select class="custom-select col-10" id="faltaDisciplina">
+                              <option value="Português">Português</option>
+                              <option value="Matemática">Matemática</option>
+                              <option value="Estudo do Meio">Estudo do Meio</option>
+                            </select>
+                          </div>
+                          <div class="form-group row">
+                            <label for="faltaDia" class="col-sm-2 col-form-label">Dia</label>
+                            <select class="custom-select col-10" id="faltaDia" data-bind="foreach:$root.diasFaltas">
+                              <option data-bind="attr:{value:data}, text:data"></option>
+                            </select>
+                          </div>
+                          <div class="form-group row">
+                            <label for="faltaMotivo" class="col-sm-2 col-form-label">Disciplina</label>
+                            <select class="custom-select col-10" id="faltaMotivo">
+                              <option value="presença">Falta de presença</option>
+                              <option value="material">Falta de material</option>
+                              <option value="comportamento">Falta de comportamento</option>
+                            </select>
+                          </div>
+                          <a href="#" class="btn btn-primary btn-sm col-12 mb-3" id="modalSubmeterFalta"
+                            role="button">Submeter falta</a>
+                        </div>
+                        <!-- ko ifnot:faltas.length==0-->
+                        <div class="table-responsive">
+                          <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                            <thead>
+                              <tr>
+                                <th>Dia</th>
+                                <th>Atividade</th>
+                                <th>Tipo</th>
+                                <th></th>
+                              </tr>
+                            </thead>
+                            <tbody data-bind="foreach:faltas">
+                              <tr>
+                                <td data-bind="text:dia"></td>
+                                <td data-bind="text:disciplina"></td>
+                                <td data-bind="text:motivo"></td>
+                                <td>
+                                  <a class="ml-3 btn btn-sm btn-info btn-icon-split" href="#"
+                                    id="modalFaltasJustificar">
+                                    <span class="icon text-white-50">
+                                      <i class="fas fa-sticky-note"></i>
+                                    </span>
+                                    <span class="text">Justificar falta</span>
+                                  </a>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <!-- /ko -->
+                        <!-- ko if:faltas.length==0-->
+                        <p>O aluno não tem faltas registadas.</p>
+                        <!-- /ko -->
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Cartão DadosPessoais -->
+                  <div class="card shadow m2-4">
+                    <a href="#cardDadosPessoais" class="d-block card-header py-3" data-toggle="collapse" role="button"
+                      aria-expanded="true" aria-controls="cardDadosPessoais">
+                      <h6 class="m-0 font-weight-bold text-primary">Consulta do Processo</h6>
+                    </a>
+                    <div class="collapse" id="cardDadosPessoais">
+                      <div class="card-body">
+                        <dl>
+                          <dt class="text-weight-bold">Nome</dt>
+                          <dd data-bind="text:nome"></dd>
+                          <dt class="text-weight-bold">Número de aluno</dt>
+                          <dd data-bind="text:nAluno"></dd>
+                          <dt class="text-weight-bold">Idade</dt>
+                          <dd data-bind="text:idade"></dd>
+                        </dl>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- /ko -->
+
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                  <button type="button" class="btn btn-primary" id="modalGuardarAlteracoes">Guardar
+                    alterações</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- /.container-fluid -->
+
+      </div>
+      <!-- End of Main Content -->
+
+      <!-- Footer -->
+      <footer class="sticky-footer bg-white">
+        <div class="container my-auto">
+          <div class="copyright text-center my-auto">
+            <span>Copyright &copy; 2019 - G109 Modelação e Análise de Sistemas - DETI-UA</span>
+          </div>
+        </div>
+      </footer>
+      <!-- End of Footer -->
+
+    </div>
+    <!-- End of Content Wrapper -->
+
+  </div>
+  <!-- End of Page Wrapper -->
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Logout Modal-->
+  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+          <a class="btn btn-primary" href="login.html">Logout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!--<script src="js/knockout.js"></script>-->
+  <script src="https://knockoutjs.com/downloads/knockout-3.5.0.js"></script>
+
+  <!-- ViewModel -->
+  <script src="js/global.js"></script>
+  <script src="js/turma.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="js/sb-admin-2.min.js"></script>
+
+  <!-- Page level plugins -->
+  <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+  <!-- Page level custom scripts -->
+  <script src="js/demo/datatables-demo.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,504 @@
+{
+  "escola": "Escola Básica da Glória",
+  "cidade": "Aveiro",
+  "ciclo": 1,
+  "turma": "1B",
+  "profResponsavel": "Isadora Ferreira",
+  "alunos": [
+    {
+      "nome": "Afonso Dias Coelho",
+      "idade": 6,
+      "nAluno":12345,
+      "faltas": [
+        {
+          "dia":"06/03/2019",
+          "disciplina":"Português",
+          "motivo":"Falta de comportamento"
+        },
+        {
+          "dia":"10/04/2019",
+          "disciplina":"Matemática",
+          "motivo":"Falta de presença"
+        }
+      ],
+      "disciplinas": [
+        {
+          "nome":"Português",
+          "avaliacao":5,
+          "observacao":"O aluno é muito motivado e trabalhador."
+        },
+        {
+          "nome":"Matemática",
+          "avaliacao":4,
+          "observacao":"O aluno é atento e esforça-se para superar os seus limites. Deve continuar o bom trabalho"
+        },
+        {
+          "nome":"Estudo do Meio",
+          "avaliacao":4,
+          "observacao":"O aluno dedica-se e mostra-se bastante interessado nos temas abordados."
+        }
+      ],
+      "atitude":5
+    },
+    {
+      "nome": "Alexandre Fonseca",
+      "idade": 6,
+      "nAluno":12346,
+      "faltas": [
+        {
+          "dia":"01/02/2019",
+          "disciplina":"Estudo do Meio",
+          "motivo":"Falta de material"
+        }
+      ],
+      "disciplinas": [
+        {
+          "nome":"Português",
+          "avaliacao":3,
+          "observacao":"O aluno deve dedicar-se mais à disciplina, pois consegue obter melhores resultados."
+        },
+        {
+          "nome":"Matemática",
+          "avaliacao":4,
+          "observacao":"O aluno é atento e esforça-se para superar os seus limites. Deve continuar o bom trabalho"
+        },
+        {
+          "nome":"Estudo do Meio",
+          "avaliacao":3,
+          "observacao":"O aluno deve dedicar-se mais à disciplina, pois consegue obter melhores resultados."
+        }
+      ],
+      "atitude":4
+    },
+    {
+      "nome": "Ana Rita Carvalho",
+      "idade": 6,
+      "nAluno":12347,
+      "faltas": [
+        {
+          "dia":"01/02/2019",
+          "disciplina":"Estudo do Meio",
+          "motivo":"Falta de material"
+        }
+      ],
+      "disciplinas": [
+        {
+          "nome":"Português",
+          "avaliacao":3,
+          "observacao":"O aluno é muito motivado e trabalhador."
+        },
+        {
+          "nome":"Matemática",
+          "avaliacao":4,
+          "observacao":"O aluno é atento e esforça-se para superar os seus limites. Deve continuar o bom trabalho"
+        },
+        {
+          "nome":"Estudo do Meio",
+          "avaliacao":4,
+          "observacao":"O aluno dedica-se e mostra-se bastante interessado nos temas abordados."
+        }
+      ],
+      "atitude":3
+    },
+    {
+      "nome": "Bruno Souza Moreira Silva",
+      "idade": 7,
+      "nAluno":12348,
+      "faltas": [
+        {
+          "nome":"Português",
+          "avaliacao":5,
+          "observacao":"O aluno é muito motivado e trabalhador."
+        },
+        {
+          "nome":"Matemática",
+          "avaliacao":4,
+          "observacao":"O aluno é atento e esforça-se para superar os seus limites. Deve continuar o bom trabalho"
+        },
+        {
+          "nome":"Estudo do Meio",
+          "avaliacao":4,
+          "observacao":"O aluno dedica-se e mostra-se bastante interessado nos temas abordados."
+        }
+      ],
+      "disciplinas": [
+        {
+          "nome":"Português",
+          "avaliacao":4,
+          "observacao":"O aluno é muito motivado e trabalhador."
+        },
+        {
+          "nome":"Matemática",
+          "avaliacao":4,
+          "observacao":"O aluno é atento e esforça-se para superar os seus limites. Deve continuar o bom trabalho"
+        },
+        {
+          "nome":"Estudo do Meio",
+          "avaliacao":4,
+          "observacao":"O aluno dedica-se e mostra-se bastante interessado nos temas abordados."
+        }
+      ],
+      "atitude":2
+    },
+    {
+      "nome": "Carolina Barbosa Ferreira",
+      "idade": 6,
+      "nAluno":12349,
+      "faltas": [
+        {
+          "dia":"01/02/2019",
+          "disciplina":"Estudo do Meio",
+          "motivo":"Falta de material"
+        }
+      ],
+      "disciplinas": [
+        {
+          "nome":"Português",
+          "avaliacao":3,
+          "observacao":"O aluno é muito motivado e trabalhador."
+        },
+        {
+          "nome":"Matemática",
+          "avaliacao":2,
+          "observacao":"O aluno tem muitas dificuldades nesta disciplina e em vez de se esforçar para as combater, acomoda-se. Deve alterar a sua postura."
+        },
+        {
+          "nome":"Estudo do Meio",
+          "avaliacao":4,
+          "observacao":"O aluno dedica-se e mostra-se bastante interessado nos temas abordados."
+        }
+      ],
+      "atitude":5
+    },
+    {
+      "nome": "Daniel Mota Souza",
+      "idade": 6,
+      "nAluno":12350,
+      "faltas": [
+        {
+          "dia":"01/02/2019",
+          "disciplina":"Estudo do Meio",
+          "motivo":"Falta de comportamento"
+        }
+      ],
+      "disciplinas": [
+        {
+          "nome":"Português",
+          "avaliacao":5,
+          "observacao":"O aluno é muito motivado e trabalhador."
+        },
+        {
+          "nome":"Matemática",
+          "avaliacao":4,
+          "observacao":"O aluno é atento e esforça-se para superar os seus limites. Deve continuar o bom trabalho"
+        },
+        {
+          "nome":"Estudo do Meio",
+          "avaliacao":4,
+          "observacao":"O aluno dedica-se e mostra-se bastante interessado nos temas abordados."
+        }
+      ],
+      "atitude":1
+    },
+    {
+      "nome": "Filipa Santos Marques",
+      "idade": 6,
+      "nAluno":12351,
+      "faltas": [
+        {
+          "dia":"01/02/2019",
+          "disciplina":"Estudo do Meio",
+          "motivo":"Falta de material"
+        }
+      ],
+      "disciplinas": [
+        {
+          "nome":"Português",
+          "avaliacao":5,
+          "observacao":"O aluno é muito motivado e trabalhador."
+        },
+        {
+          "nome":"Matemática",
+          "avaliacao":4,
+          "observacao":"O aluno é atento e esforça-se para superar os seus limites. Deve continuar o bom trabalho"
+        },
+        {
+          "nome":"Estudo do Meio",
+          "avaliacao":4,
+          "observacao":"O aluno dedica-se e mostra-se bastante interessado nos temas abordados."
+        }
+      ],
+      "atitude":5
+    },
+    {
+      "nome": "Gonçalo André Lima",
+      "idade": 6,
+      "nAluno":12352,
+      "faltas": [
+        {
+          "dia":"01/02/2019",
+          "disciplina":"Estudo do Meio",
+          "motivo":"Falta de material"
+        }
+      ],
+      "disciplinas": [
+        {
+          "nome":"Português",
+          "avaliacao":5,
+          "observacao":"O aluno é muito motivado e trabalhador."
+        },
+        {
+          "nome":"Matemática",
+          "avaliacao":4,
+          "observacao":"O aluno é atento e esforça-se para superar os seus limites. Deve continuar o bom trabalho"
+        },
+        {
+          "nome":"Estudo do Meio",
+          "avaliacao":4,
+          "observacao":"O aluno dedica-se e mostra-se bastante interessado nos temas abordados."
+        }
+      ],
+      "atitude":5
+    },
+    {
+      "nome": "João Miguel Fonseca",
+      "idade": 6,
+      "nAluno":12353,
+      "faltas": [
+        {
+          "dia":"01/02/2019",
+          "disciplina":"Estudo do Meio",
+          "motivo":"Falta de material"
+        }
+      ],
+      "disciplinas": [
+        {
+          "nome":"Português",
+          "avaliacao":5,
+          "observacao":"O aluno é muito motivado e trabalhador."
+        },
+        {
+          "nome":"Matemática",
+          "avaliacao":4,
+          "observacao":"O aluno é atento e esforça-se para superar os seus limites. Deve continuar o bom trabalho"
+        },
+        {
+          "nome":"Estudo do Meio",
+          "avaliacao":4,
+          "observacao":"O aluno dedica-se e mostra-se bastante interessado nos temas abordados."
+        }
+      ],
+      "atitude":3
+    },
+    {
+      "nome": "João Pedro Paiva",
+      "idade": 7,
+      "nAluno":12354,
+      "faltas": [
+        {
+          "dia":"01/02/2019",
+          "disciplina":"Estudo do Meio",
+          "motivo":"Falta de material"
+        }
+      ],
+      "disciplinas": [
+        {
+          "nome":"Português",
+          "avaliacao":5,
+          "observacao":"O aluno é muito motivado e trabalhador."
+        },
+        {
+          "nome":"Matemática",
+          "avaliacao":4,
+          "observacao":"O aluno é atento e esforça-se para superar os seus limites. Deve continuar o bom trabalho"
+        },
+        {
+          "nome":"Estudo do Meio",
+          "avaliacao":4,
+          "observacao":"O aluno dedica-se e mostra-se bastante interessado nos temas abordados."
+        }
+      ],
+      "atitude":3
+    },
+    {
+      "nome": "Juliana Soares Pinho",
+      "idade": 6,
+      "nAluno":12355,
+      "faltas": [
+        {
+          "dia":"01/02/2019",
+          "disciplina":"Estudo do Meio",
+          "motivo":"Falta de material"
+        }
+      ],
+      "disciplinas": [
+        {
+          "nome":"Português",
+          "avaliacao":5,
+          "observacao":"O aluno é muito motivado e trabalhador."
+        },
+        {
+          "nome":"Matemática",
+          "avaliacao":4,
+          "observacao":"O aluno é atento e esforça-se para superar os seus limites. Deve continuar o bom trabalho"
+        },
+        {
+          "nome":"Estudo do Meio",
+          "avaliacao":4,
+          "observacao":"O aluno dedica-se e mostra-se bastante interessado nos temas abordados."
+        }
+      ],
+      "atitude":2
+    },
+    {
+      "nome": "Leonardo Filipe Silva",
+      "idade": 7,
+      "nAluno":12356,
+      "faltas": [
+        {
+          "dia":"01/02/2019",
+          "disciplina":"Estudo do Meio",
+          "motivo":"Falta de material"
+        }
+      ],
+      "disciplinas": [
+        {
+          "nome":"Português",
+          "avaliacao":5,
+          "observacao":"O aluno é muito motivado e trabalhador."
+        },
+        {
+          "nome":"Matemática",
+          "avaliacao":4,
+          "observacao":"O aluno é atento e esforça-se para superar os seus limites. Deve continuar o bom trabalho"
+        },
+        {
+          "nome":"Estudo do Meio",
+          "avaliacao":4,
+          "observacao":"O aluno dedica-se e mostra-se bastante interessado nos temas abordados."
+        }
+      ],
+      "atitude":5
+    },
+    {
+      "nome": "Mariana Andrade Pinto",
+      "idade": 6,
+      "nAluno":12357,
+      "faltas": [
+        {
+          "dia":"01/02/2019",
+          "disciplina":"Estudo do Meio",
+          "motivo":"Falta de material"
+        }
+      ],
+      "disciplinas": [
+        {
+          "nome":"Português",
+          "avaliacao":5,
+          "observacao":"O aluno é muito motivado e trabalhador."
+        },
+        {
+          "nome":"Matemática",
+          "avaliacao":4,
+          "observacao":"O aluno é atento e esforça-se para superar os seus limites. Deve continuar o bom trabalho"
+        },
+        {
+          "nome":"Estudo do Meio",
+          "avaliacao":4,
+          "observacao":"O aluno dedica-se e mostra-se bastante interessado nos temas abordados."
+        }
+      ],
+      "atitude":1
+    },
+    {
+      "nome": "Paula Pinheiro Santos",
+      "idade": 6,
+      "nAluno":12358,
+      "faltas": [
+        {
+          "dia":"01/02/2019",
+          "disciplina":"Estudo do Meio",
+          "motivo":"Falta de material"
+        }
+      ],
+      "disciplinas": [
+        {
+          "nome":"Português",
+          "avaliacao":5,
+          "observacao":"O aluno é muito motivado e trabalhador."
+        },
+        {
+          "nome":"Matemática",
+          "avaliacao":4,
+          "observacao":"O aluno é atento e esforça-se para superar os seus limites. Deve continuar o bom trabalho"
+        },
+        {
+          "nome":"Estudo do Meio",
+          "avaliacao":4,
+          "observacao":"O aluno dedica-se e mostra-se bastante interessado nos temas abordados."
+        }
+      ],
+      "atitude":3
+    },
+    {
+      "nome": "Tiago Ferreira Martins",
+      "idade": 7,
+      "nAluno":12359,
+      "faltas": [
+        {
+          "dia":"01/02/2019",
+          "disciplina":"Estudo do Meio",
+          "motivo":"Falta de material"
+        }
+      ],
+      "disciplinas": [
+        {
+          "nome":"Português",
+          "avaliacao":5,
+          "observacao":"O aluno é muito motivado e trabalhador."
+        },
+        {
+          "nome":"Matemática",
+          "avaliacao":4,
+          "observacao":"O aluno é atento e esforça-se para superar os seus limites. Deve continuar o bom trabalho"
+        },
+        {
+          "nome":"Estudo do Meio",
+          "avaliacao":4,
+          "observacao":"O aluno dedica-se e mostra-se bastante interessado nos temas abordados."
+        }
+      ],
+      "atitude":5
+    },
+    {
+      "nome": "Vitor Souza Lacerda",
+      "idade": 6,
+      "nAluno":12360,
+      "faltas": [
+        {
+          "dia":"01/02/2019",
+          "disciplina":"Estudo do Meio",
+          "motivo":"Falta de material"
+        }
+      ],
+      "disciplinas": [
+        {
+          "nome":"Português",
+          "avaliacao":5,
+          "observacao":"O aluno é muito motivado e trabalhador."
+        },
+        {
+          "nome":"Matemática",
+          "avaliacao":4,
+          "observacao":"O aluno é atento e esforça-se para superar os seus limites. Deve continuar o bom trabalho"
+        },
+        {
+          "nome":"Estudo do Meio",
+          "avaliacao":4,
+          "observacao":"O aluno dedica-se e mostra-se bastante interessado nos temas abordados."
+        }
+      ],
+      "atitude":5
+    }
+  ]
+}

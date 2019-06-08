@@ -1,0 +1,38 @@
+{
+    "Atual":{
+        "atividades":[
+            {
+                "data": "01/06/2019",
+                "hora_inicio": "13:00",
+                "hora_fim": "17:00",
+                "titulo": "Dia da Saude",
+                "descricao": "Nesse dia um médico e duas enfermeiras do Centro de Sáude vêm à escola falar para os alunos sobre a importância aos cuidados de saúdes e hábitos de higiênie. "
+            },
+            {
+                "data": "07/06/2019",
+                "hora_inicio": "10:00",
+                "hora_fim": "17:00",
+                "titulo": "Feira de Profissões",
+                "descricao": "Vamos promover uma Feira de Porfissões, para que as crianças tomem conhecimento de profissões que não são tão comuns em seu dia a dia, e para tal vamos ter alguns convidados a falar sobre suas profissões."
+            },
+            {
+                "data": "13/06/2019",
+                "hora_inicio": "13:00",
+                "Hora_fim": "17:00",
+                "titulo": "Torneio de Xadrez",
+                "descricao": "Vamos promover uma tarde em que os alunos vão poder praticar o melhor do seu Xadrez, e divertir com seus colegas em um animado torneio de Xadrez."
+            }
+        ]
+    },
+    "Passado":{
+        "atividades":[
+            {
+                "data": "07/12/2018",
+                "hora_inicio": "10:00",
+                "hora_fim": "17:00",
+                "titulo": "Construção do Presépio",
+                "descricao": "Com a chegada do Natal vamos estimular nossos alunos nas artes e vamos promover uma feira onde eles vão ter a oportunidade trabalhar suas habilidades no artesanato e construir os elemntos do Presépio da escola."
+            }
+        ]
+    }
+}

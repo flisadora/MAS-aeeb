@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>AEEB - Ementas</title>
+
+  <!-- Custom fonts for this template-->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link
+    href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+    rel="stylesheet">
+
+  <!-- Custom styles for this template
+  <link href="css/sb-admin-2.min.css" rel="stylesheet">-->
+  <link href="css/sb-admin-2.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Page Wrapper -->
+  <div id="wrapper">
+
+    <!-- Sidebar -->
+    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+      <!-- Sidebar - Brand -->
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+        <a class="navbar-brand" href="#">
+          <img src="img/logo.png" width="100%" height="auto" alt="AEEB">
+        </a>
+      </a>
+
+      <!-- ko foreach:menu -->
+      <!-- ko if:tipo=='divider' -->
+      <hr class="sidebar-divider">
+      <!-- /ko -->
+      <!-- ko if:tipo=='normal' -->
+      <!-- ko if:nome=='Ementas' -->
+      <li class="nav-item">
+        <a class="nav-link" data-bind="attr:{href:url}">
+          <i data-bind="attr:{class:icone}"></i>
+          <span data-bind="text:nome"></span></a>
+      </li>
+      <!--/ko-->
+      <!-- ko ifnot:nome=='Ementas' -->
+      <li class="nav-item">
+        <a class="nav-link" data-bind="attr:{href:url}">
+          <i data-bind="attr:{class:icone}"></i>
+          <span data-bind="text:nome"></span></a>
+      </li>
+      <!--/ko-->
+      <!-- /ko -->
+      <!-- ko if:tipo=='dropdown' -->
+      <li class="nav-item active">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" aria-expanded="true"
+          data-bind="attr:{'data-target':'#'+id,'aria-controls':id}">
+          <i data-bind="attr:{class:icone}"></i>
+          <span data-bind="text:nome"></span>
+        </a>
+        <div data-bind="attr:{id:id}" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header" data-bind="text:dropdownTitle"></h6>
+            <!-- ko foreach:subs -->
+            <a class="collapse-item" data-bind="text:nome, attr:{href:url}"></a>
+            <!-- /ko -->
+          </div>
+        </div>
+      </li>
+      <!-- /ko -->
+      <!-- ko if:tipo=='heading' -->
+      <div class="sidebar-heading" data-bind="text:nome"></div>
+      <!-- /ko -->
+      <!-- /ko -->
+
+      <!-- Sidebar Toggler (Sidebar) -->
+      <div class="text-center d-none d-md-inline">
+        <button class="rounded-circle border-0" id="sidebarToggle"></button>
+      </div>
+
+    </ul>
+    <!-- End of Sidebar -->
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+
+      <!-- Main Content -->
+      <div id="content">
+
+        <!-- Topbar -->
+        <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+          <!-- Sidebar Toggle (Topbar) -->
+          <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+            <i class="fa fa-bars"></i>
+          </button>
+
+          <!-- Topbar Search -->
+          <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+            <div class="input-group">
+              <h1 class="h3 mb-0 text-gray-800">Ementas - Turma 1B</h1>
+              <!--
+              <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
+                aria-label="Search" aria-describedby="basic-addon2">
+              <div class="input-group-append">
+                <button class="btn btn-primary" type="button">
+                  <i class="fas fa-search fa-sm"></i>
+                </button>
+              </div>
+            -->
+            </div>
+          </form>
+
+          <!-- Topbar Navbar -->
+          <ul class="navbar-nav ml-auto">
+
+            <!-- Dropdown - Messages -->
+            <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
+              aria-labelledby="searchDropdown">
+              <form class="form-inline mr-auto w-100 navbar-search">
+                <div class="input-group">
+                  <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
+                    aria-label="Search" aria-describedby="basic-addon2">
+                  <div class="input-group-append">
+                    <button class="btn btn-primary" type="button">
+                      <i class="fas fa-search fa-sm"></i>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            </li>
+
+            <!-- Nav Item - Alerts -->
+            <li class="nav-item dropdown no-arrow mx-1">
+              <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-bell fa-fw"></i>
+                <!-- Counter - Alerts -->
+                <span class="badge badge-danger badge-counter">1+</span>
+              </a>
+              <!-- Dropdown - Alerts -->
+              <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                aria-labelledby="alertsDropdown">
+                <h6 class="dropdown-header">
+                  Central de Anúncios
+                </h6>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="mr-3">
+                    <div class="icon-circle bg-primary">
+                      <i class="fas fa-file-alt text-white"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="small text-gray-500">Junho 8, 2019</div>
+                    <span class="font-weight-bold">Já está dsiponível a ementa da próxima semana.</span>
+                  </div>
+                </a>
+                <a class="dropdown-item text-center small text-gray-500" href="#">Mostrar todos os Anúncios</a>
+              </div>
+            </li>
+
+            <!-- Nav Item - Messages -->
+            <li class="nav-item dropdown no-arrow mx-1">
+              <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-envelope fa-fw"></i>
+                <!-- Counter - Messages -->
+                <span class="badge badge-danger badge-counter">2</span>
+              </a>
+              <!-- Dropdown - Messages -->
+              <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                aria-labelledby="messagesDropdown">
+                <h6 class="dropdown-header">
+                  Central de Mensagens
+                </h6>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="dropdown-list-image mr-3">
+                    <img class="rounded-circle" src="https://source.unsplash.com/PUF9b2AFWCo/60x60" alt="">
+                    <div class="status-indicator bg-success"></div>
+                  </div>
+                  <div class="font-weight-bold">
+                    <div class="text-truncate">Obrigada professor Carlos ...</div>
+                    <div class="small text-gray-500">João Miguel Fonseca · 3h</div>
+                  </div>
+                </a>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="dropdown-list-image mr-3">
+                    <img class="rounded-circle" src="https://source.unsplash.com/7fzINre0NQE/60x60" alt="">
+                    <div class="status-indicator"></div>
+                  </div>
+                  <div>
+                    <div class="text-truncate">Enviamos hoje a autorização ...</div>
+                    <div class="small text-gray-500">Ana Rita Carvalho · 1d</div>
+                  </div>
+                </a>
+                <a class="dropdown-item text-center small text-gray-500" href="#">Ler Mais Mensagens</a>
+              </div>
+            </li>
+
+            <div class="topbar-divider d-none d-sm-block"></div>
+
+            <!-- Nav Item - User Information -->
+            <li class="nav-item dropdown no-arrow">
+              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Isadora Loredo</span>
+                <img class="img-profile rounded-circle" src="https://source.unsplash.com/_H6wpor9mjs/60x60">
+              </a>
+              <!-- Dropdown - User Information -->
+              <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                <a class="dropdown-item" href="#">
+                  <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Meus Dados
+                </a>
+                <a class="dropdown-item" href="#">
+                  <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Configurações
+                </a>
+                <a class="dropdown-item" href="#">
+                  <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Log de Atividades
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                  <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Sair
+                </a>
+              </div>
+            </li>
+
+          </ul>
+
+        </nav>
+        <!-- End of Topbar -->
+
+        <!-- Begin Page Content -->
+        <div class="container-fluid">
+
+          <!-- Content  -->
+          <div class="container-fluid pt-4 pb-5" id="pageContent">
+
+
+            <h4 data-bind="text:semana">Semana</h5>
+              <!-- Page Heading -->
+              <p class="mb-5">Nesta área poderá consultar as ementas diárias de refeições.</p>
+
+
+              <!-- Cartão DadosPessoais -->
+              <div class="pb-5" data-bind="foreach:ementas_display">
+                <div class="card shadow m2-4">
+                  <a data-bind="attr:{href:'#'+dia, 'aria-controls':dia}" class="d-block card-header py-3"
+                    data-toggle="collapse" role="button" aria-expanded="true">
+                    <h6 class="m-0 font-weight-bold text-primary" data-bind="text:dia">Segunda</h6>
+                  </a>
+                  <div class="collapse" data-bind="attr:{id:dia}">
+                    <div class="card-body">
+                      <dl>
+                        <dt class="text-weight-bold">Lanche da manhã</dt>
+                        <dd data-bind="text:lanche_manha"></dd>
+                        <dt class="text-weight-bold">Almoço</dt>
+                        <dd data-bind="with:almoco">
+                          <figure class="highlight">
+                        <dt class="text-weight-bold">Sopa</dt>
+                        <dd data-bind="text:sopa"></dd>
+                        <dt class="text-weight-bold">Prato</dt>
+                        <dd data-bind="text:prato"></dd>
+                        <dt class="text-weight-bold">Salada</dt>
+                        <dd data-bind="text:salada"></dd>
+                        <dt class="text-weight-bold">Sobremesa</dt>
+                        <dd data-bind="text:sobremesa"></dd>
+                        <dt class="text-weight-bold">Pão</dt>
+                        <dd data-bind="text:pao"></dd>
+                        <div class="text-xs row">
+                          <div class="col-2">
+                            <span class="font-weight-bold text-xs">Valor Energético: </span><span
+                              data-bind="text:valor_energ"></span>
+                          </div>
+                          <div class="col-3">
+                            <span class="font-weight-bold text-xs">Nutrientes: </span><span
+                              data-bind="text:nutrientes"></span>
+                          </div>
+                          <div class="col-3">
+                            <span class="font-weight-bold text-xs">Alergias: </span><span
+                              data-bind="text:alergias"></span>
+                          </div>
+                        </div>
+                        </figure>
+                        </dd>
+                        <dt class="text-weight-bold">Lanche da tarde</dt>
+                        <dd data-bind="text:lanche_tarde"></dd>
+                      </dl>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <p class="font-weight-bold mb-3">Alergias: <span class="font-weight-light"
+                  data-bind="text:alergias">Alergias</span></p>
+
+
+
+
+
+
+
+
+          </div>
+
+          <!-- Footer -->
+          <footer class="sticky-footer bg-white">
+            <div class="container my-auto">
+              <div class="copyright text-center my-auto">
+                <span>Copyright &copy; 2019 - G109 Modelação e Análise de Sistemas - DETI-UA</span>
+              </div>
+            </div>
+          </footer>
+          <!-- End of Footer -->
+
+        </div>
+        <!-- End of Content Wrapper -->
+
+      </div>
+      <!-- End of Page Wrapper -->
+
+
+      <!-- Bootstrap core JavaScript-->
+      <script src="vendor/jquery/jquery.min.js"></script>
+      <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+      <!--<script src="js/knockout.js"></script>-->
+      <script src="https://knockoutjs.com/downloads/knockout-3.5.0.js"></script>
+
+      <!-- ViewModel -->
+      <script src="js/global.js"></script>
+
+      <!-- Core plugin JavaScript-->
+      <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+      <!-- Custom scripts for all pages-->
+      <script src="js/sb-admin-2.min.js"></script>
+
+      <!-- Page level plugins -->
+      <script src="vendor/chart.js/Chart.min.js"></script>
+
+      <!-- Page level custom scripts -->
+      <script src="js/ementas.js"></script>
+
+</body>
+
+</html>
